@@ -122,7 +122,6 @@ body {
   margin-bottom: 0;
   animation-delay: .18s;
 }
-
 .panel-title {
   font-size: 11px; font-weight: 600; text-transform: uppercase;
   letter-spacing: 2.5px; color: var(--accent2); margin-bottom: 18px;
@@ -525,7 +524,6 @@ const taskList = document.getElementById('taskList');
 if (addTaskPanel && taskList) {
   taskList.insertAdjacentElement('afterend', addTaskPanel);
 }
-
 /* ============================================================
    PERSISTENCE
    ============================================================ */
@@ -740,7 +738,7 @@ function render() {
     list.innerHTML = `<div class="empty">
       <span class="empty-icon">${document.getElementById('filterSel').value === 'completed' ? '🎉' : '📭'}</span>
       <p>${tasks.length === 0
-        ? 'No tasks yet — add one above!'
+        ? 'No tasks yet — add one below!'
         : 'No tasks match your current filters.'}</p>
     </div>`;
     return;
